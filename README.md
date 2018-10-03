@@ -16,7 +16,7 @@
 
 
 # query 1
-
+```graphql
 {
   pet(id: 1) {
     name
@@ -44,9 +44,11 @@
     }
   }
 }
+```
+
 
 # query 2
-
+```json
 mutation {
   createPet(name: "Raisin", kind: "Frenchie") {
     id
@@ -54,9 +56,11 @@ mutation {
     kind
   }
 }
+```
 
 # query 3
 
+```json
 {
   pets {
     id
@@ -75,9 +79,11 @@ mutation {
     }
   }
 }
+```
 
 # query 4
 
+```json
 {
   pets {
     id
@@ -96,9 +102,11 @@ mutation {
     }
   }
 }
+```
+
 
 # query 5
-
+```json
 {
   pets(last: 4) {
     pageInfo {
@@ -129,9 +137,12 @@ mutation {
     }
   }
 }
+```
+
 
 # query 6
 
+```json
 {
 pets(last: 4) {
     pageInfo {
@@ -166,4 +177,5 @@ pets(last: 4) {
     }
   }
 }
+```
 
