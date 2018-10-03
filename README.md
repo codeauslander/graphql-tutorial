@@ -48,7 +48,7 @@
 
 
 # query 2
-```json
+```graphql
 mutation {
   createPet(name: "Raisin", kind: "Frenchie") {
     id
@@ -60,7 +60,7 @@ mutation {
 
 # query 3
 
-```json
+```graphql
 {
   pets {
     id
@@ -83,7 +83,7 @@ mutation {
 
 # query 4
 
-```json
+```graphql
 {
   pets {
     id
@@ -106,7 +106,7 @@ mutation {
 
 
 # query 5
-```json
+```graphql
 {
   pets(last: 4) {
     pageInfo {
@@ -142,7 +142,7 @@ mutation {
 
 # query 6
 
-```json
+```graphql
 {
 pets(last: 4) {
     pageInfo {
