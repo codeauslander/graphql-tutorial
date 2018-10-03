@@ -37,10 +37,4 @@ Types::QueryType = GraphQL::ObjectType.define do
       Pet.all
     }
   end
-
-  # connection :activities, Types::ActivityType.connection_type do
-  #   resolve -> (obj, args, ctx) {
-  #     OneToManyLoader.for(Activity, :pet_id).load([obj.id])
-  #   }
-  # end
 end
