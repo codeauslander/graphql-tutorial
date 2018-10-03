@@ -23,7 +23,7 @@ Types::PetType = GraphQL::ObjectType.define do
       RecordLoader.for(Owner).load(obj.owner_id)
     }
   end
-  
+
   field :activities, -> { types[Types::ActivityType] }  do
     resolve -> (obj, args, ctx) {
       OneToManyLoader.for(Activity, :pet_id).load(obj.id)
