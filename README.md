@@ -169,7 +169,7 @@ pets(last: 4) {
           edges {
             node {
               id
-              decription 
+              description 
             }
           }
         }
